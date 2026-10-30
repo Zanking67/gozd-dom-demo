@@ -121,3 +121,62 @@
 @media(prefers-reduced-motion:reduce){
  .product-card,.product-img img,.btn{transition:none!important}
 }
+
+/* --- Restored three-column cards, calculator and delivery zones --- */
+.calculator-teaser{background:#e5eae2;padding:38px 0}
+.calculator-teaser-inner{display:flex;align-items:center;justify-content:space-between;gap:40px}
+.calculator-teaser .eyebrow{margin-bottom:12px}
+.calculator-teaser h2{font-size:clamp(28px,3vw,43px);margin-bottom:10px}
+.calculator-teaser p{font-size:13px;color:#66776b;max-width:650px;margin:0}
+.calculator-teaser .btn{flex:none}
+.calculator-section{background:#ecefe7}
+.calculator-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:stretch}
+.calculator-controls{background:#fff;padding:36px;display:flex;flex-direction:column;gap:12px;border:1px solid #dae2d7}
+.calc-flag{font-size:10px;letter-spacing:.13em;font-weight:800;color:#b17051;margin-bottom:8px}
+.calculator-controls label{font-size:13px;font-weight:800;color:var(--ink);margin-top:8px}
+.calculator-controls select,.calc-quantity-field input{width:100%;border:1px solid #cbd6ca;background:#f9fbf7;min-height:49px;padding:12px 14px;outline:none;color:var(--ink);font-size:14px;border-radius:0}
+.calculator-controls select:focus,.calc-quantity-field input:focus{box-shadow:0 0 0 3px #d4e8da;border-color:#4e795e}
+.calc-quantity-heading{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.calc-quantity-heading span,.calc-range-label{font-size:11px;color:#778677}
+.calc-quantity-field{position:relative}
+.calc-quantity-field input{padding-right:56px;font-weight:700;font-size:20px}
+.calc-quantity-field>span{position:absolute;right:16px;top:13px;color:#7a8578;font-size:12px;font-weight:700}
+.calculator-controls #calc-slider{width:100%;accent-color:#c97952;margin:3px 0 0;cursor:pointer}
+.calc-range-label{display:flex;justify-content:space-between;margin-top:-9px}
+.calculator-controls .calc-helper{font-size:11px;color:#748477;line-height:1.8;margin:0}
+.calculator-controls .text-link{align-self:flex-start;font-size:12px}
+.calculator-result{background:#1b422e;color:white;padding:38px 38px 34px;display:flex;flex-direction:column;justify-content:flex-start;min-width:0}
+.calculator-result .label{color:#e3ad89}
+.calc-result-top{margin-top:30px;padding-bottom:27px;border-bottom:1px solid #567460}
+.calc-result-top p{font-size:15px;color:#c7d9c8;margin-bottom:4px}
+.calc-total{font-size:clamp(52px,6vw,76px);font-weight:800;letter-spacing:-.065em;line-height:1.12;margin:11px 0}
+#calc-total-label{font-size:12px;color:#b6c6b7}
+.calc-result-lines{padding:24px 0;display:grid;gap:12px}
+.calc-result-lines>div{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #496d55;padding-bottom:10px;font-size:13px}
+.calc-result-lines span{color:#bcd1bf}
+.calc-result-lines strong{font-weight:800}
+.calc-note{font-size:11px;line-height:1.8;color:#d4decf;margin:5px 0 24px}
+.calc-request{align-self:stretch;margin-top:auto}
+.calc-request[aria-disabled="true"]{pointer-events:none;opacity:.5}
+.calc-legal{font-size:12px;color:#707d70;line-height:1.8;max-width:960px;margin:27px 0 0}
+.delivery-zone-section{background:#f2f4ed}
+.delivery-zone-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(300px,1fr);gap:24px}
+.delivery-map-frame{background:white;min-width:0;border:1px solid #d9e2d6}
+#delivery-map{height:530px;width:100%;background:#e4e9e2}
+#delivery-map .map-loading{padding:30px;color:#627364}
+.delivery-map-caption{padding:18px 21px 18px;font-size:11px;color:#708072;line-height:1.8;margin:0}
+.delivery-zone-info{padding:32px 28px;background:#e3eae0}
+.delivery-zone-info h3{font-size:31px;line-height:1.2;margin:15px 0 25px}
+.zone-row{display:flex;align-items:center;gap:13px;padding:13px 0;border-bottom:1px solid #c8d4c7}
+.zone-swatch{display:block;flex:none;width:18px;height:18px;border-radius:50%;border:2px solid #20553e;background:#69a779}
+.zone-second{background:#f3c698;border-color:#c78b61}
+.zone-outside{background:transparent;border:2px dashed #879486}
+.zone-row strong{display:block;font-size:13px;color:#294834}
+.zone-row small{display:block;color:#6e7d71;margin-top:4px;font-size:11px}
+.zone-selection{margin:22px 0;background:#fffefa;padding:17px;border-left:3px solid #c47b56}
+.zone-selection strong{font-size:15px}
+.zone-selection p{font-size:12px;color:#657669;line-height:1.65;margin:8px 0 0}
+.delivery-zone-info .btn{width:100%;justify-content:center}
+.delivery-zone-info .map-caution{font-size:11px;line-height:1.75;margin-top:20px;color:#657369}
+@media(max-width:950px){.calculator-layout{grid-template-columns:1fr}.delivery-zone-grid{grid-template-columns:1fr}.delivery-zone-info{padding:26px}.calculator-result{min-height:0}.calculator-teaser-inner{align-items:start}}
+@media(max-width:760px){.calculator-teaser-inner{flex-direction:column;gap:20px}.calculator-teaser .btn{width:100%}.calculator-controls,.calculator-result{padding:26px 22px}.calculator-layout{gap:16px}#delivery-map{height:390px}.delivery-zone-section .section-head{margin-bottom:22px}}

@@ -42,3 +42,14 @@ Projekt je povezan z GitHub repozitorijem in produkcijsko domeno Vercel. Spremem
 - Domov: stranski informativni okvir o izbiri drv, zamaknjene kartice, asimetričen razdelek z informacijami in fotografijo.
 - **Ocena v razdelku je izmišljena** in na strani izrecno označena kot primer oblikovanja. Ne uporabljajte je kot resničnega pričevanja. Pred objavo za dejansko podjetje jo nadomestite s preverjeno oceno in dovoljenjem za prikaz ali odstranite.
 - Dodatna prilagoditev prikaza na tablici in telefonu ter nastavitev za zmanjšano gibanje.
+
+## Kalkulator in območje dostave (DEMO)
+
+- Kalkulator: `ponudba.html#kalkulator`, skripta `calculator.js`.
+- Cenik, ki **ni dejanski**: bukev 110 €/prm, hrast 125 €/prm, mešana 90 €/prm.
+- Vzorčni prevoz: brez 0 €, 0–25 km 25 €, 25–50 km 49 €, izven območja po dogovoru.
+- Količina: 1–20 prm, korak 0,5. Dinamično prikaže vmesni izračun in primer skupne cene.
+- `dostava.html#obmocje` uporablja `delivery-map.js`, Leaflet 1.9.4 in OpenStreetMap ploščice; prikaže kroga radija 25 in 50 km s središčem Celje (46.2361, 15.2675). 
+- **Celje NI naslov ali sedež izmišljenega podjetja**. Meje so po zračni razdalji, ne po cestah in niso dejansko dostavno območje.
+- Klic `ponudba.html?dostava=zone1#kalkulator` predizbere cono in povezava na kontakt vnese vrsto, količino in cono.
+- Za dejansko podjetje je nujno zamenjati cene in cone, določiti DDV in preveriti realne razdalje ter dostavno pokritost.
