@@ -14,7 +14,7 @@ Demonstracijska spletna stran za **izmišljeno podjetje**. Ni resničnega sedež
 - script.js – mobilni meni, animacija ob prikazu, priprava lokalnega povpraševanja
 
 ## Fotografije
-Fotografije niso CSS ilustracije. Uporabljajo se neposredni URL-ji servisa Pexels; **niso shranjene v tem repozitoriju** in se nalagajo z zunanjega strežnika. Pred komercialnim delom za konkretnega naročnika je priporočljivo zamenjati fotografije z njihovimi lastnimi posnetki.
+Fotografije niso CSS ilustracije. Uporabljajo se neposredni URL-ji servisa Pexels; **so zdaj shranjene v mapi images/** in se nalagajo s spletne strani. Pred komercialnim delom za konkretnega naročnika je priporočljivo zamenjati fotografije z njihovimi lastnimi posnetki.
 
 Vzorčni foto-viri (Pexels, brez obveznega pripisa):
 - hero: https://images.pexels.com/photos/30155541/pexels-photo-30155541.jpeg (https://www.pexels.com/photo/stack-of-aged-wood-logs-in-slovenia-30155541/)
@@ -53,3 +53,6 @@ Projekt je povezan z GitHub repozitorijem in produkcijsko domeno Vercel. Spremem
 - **Celje NI naslov ali sedež izmišljenega podjetja**. Meje so po zračni razdalji, ne po cestah in niso dejansko dostavno območje.
 - Klic `ponudba.html?dostava=zone1#kalkulator` predizbere cono in povezava na kontakt vnese vrsto, količino in cono.
 - Za dejansko podjetje je nujno zamenjati cene in cone, določiti DDV in preveriti realne razdalje ter dostavno pokritost.
+
+## Fotografije shranjene lokalno
+Fotografije Pexels so v mapi images. Izvorne povezave in licenca so zapisane v images/README.md.
