@@ -37,3 +37,8 @@ Projekt je povezan z GitHub repozitorijem in produkcijsko domeno Vercel. Spremem
 - Zemljevid je vdelan z OpenStreetMap; središče zemljevida ni naslov sedeža.
 - `robots.txt` in `noindex` preprečujeta namerno indeksiranje demo strani.
 - Za resnično prodajo je treba dodati verodostojne poslovne podatke, GDPR obvestila, delujoč strežniški obrazec in preverjene podatke o izdelkih.
+
+## Razgibana postavitev (30. 10. 2026)
+- Domov: stranski informativni okvir o izbiri drv, zamaknjene kartice, asimetričen razdelek z informacijami in fotografijo.
+- **Ocena v razdelku je izmišljena** in na strani izrecno označena kot primer oblikovanja. Ne uporabljajte je kot resničnega pričevanja. Pred objavo za dejansko podjetje jo nadomestite s preverjeno oceno in dovoljenjem za prikaz ali odstranite.
+- Dodatna prilagoditev prikaza na tablici in telefonu ter nastavitev za zmanjšano gibanje.
