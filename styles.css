@@ -180,3 +180,52 @@
 .delivery-zone-info .map-caution{font-size:11px;line-height:1.75;margin-top:20px;color:#657369}
 @media(max-width:950px){.calculator-layout{grid-template-columns:1fr}.delivery-zone-grid{grid-template-columns:1fr}.delivery-zone-info{padding:26px}.calculator-result{min-height:0}.calculator-teaser-inner{align-items:start}}
 @media(max-width:760px){.calculator-teaser-inner{flex-direction:column;gap:20px}.calculator-teaser .btn{width:100%}.calculator-controls,.calculator-result{padding:26px 22px}.calculator-layout{gap:16px}#delivery-map{height:390px}.delivery-zone-section .section-head{margin-bottom:22px}}
+
+
+/* October 2026 visual polish: nature details, aligned cards, subtle illustrations */
+.hero-copy{position:relative;isolation:isolate}
+.hero-copy::before{content:"";position:absolute;z-index:-1;left:-218px;top:5px;width:420px;height:420px;background:url("images/wood-rings.svg") center/contain no-repeat;filter:brightness(0) invert(1);opacity:.085;pointer-events:none}
+.hero-visual::before{content:"";position:absolute;z-index:2;inset:15px;border:1px solid rgba(255,250,239,.4);pointer-events:none}
+.hero-visual::after{z-index:1}
+.hero-visual .photo-label{z-index:3}
+.hero-visual .hero-photo{transition:transform .85s cubic-bezier(.22,1,.36,1)}
+.hero-visual:hover .hero-photo{transform:scale(1.035)}
+.hero-detail .mini-star{display:inline-block;transform:rotate(-18deg)}
+.light-section,.section-story,.steps-section,.editorial-interlude{position:relative;isolation:isolate;overflow:hidden}
+.light-section::before,.light-section::after,.section-story::after,.steps-section::after,.editorial-interlude::before{content:"";position:absolute;z-index:0;background-position:center;background-repeat:no-repeat;background-size:contain;pointer-events:none}
+.light-section::before{background-image:url("images/wood-rings.svg");width:345px;height:345px;right:-140px;top:-115px;opacity:.13}
+.light-section::after{background-image:url("images/leaf-ornament.svg");width:190px;height:255px;left:-93px;bottom:-48px;opacity:.12;transform:rotate(12deg)}
+.section-story::after{background-image:url("images/leaf-ornament.svg");width:190px;height:255px;right:-60px;top:-60px;opacity:.11;transform:rotate(-17deg)}
+.steps-section::after{background-image:url("images/wood-rings.svg");width:345px;height:345px;right:-165px;bottom:-190px;opacity:.1}
+.editorial-interlude::before{background-image:url("images/leaf-ornament.svg");width:145px;height:205px;left:-55px;top:-76px;opacity:.1;transform:rotate(-12deg)}
+.light-section>.container,.section-story>.container,.steps-section>.container,.editorial-interlude>.container{position:relative;z-index:1}
+.light-section .section-head h2::after{content:"";display:block;width:61px;height:2px;margin-top:22px;background:linear-gradient(90deg,#c28262,#d9cdbd)}
+.product-grid{align-items:stretch}
+.product-grid .product-card{position:relative;display:flex;flex-direction:column;overflow:hidden}
+.product-grid .product-card::before{content:"";position:absolute;z-index:5;top:0;left:0;right:0;height:3px;background:#be7955;transform:scaleX(0);transform-origin:left;transition:transform .35s ease;pointer-events:none}
+.product-grid .product-card:hover::before,.product-grid .product-card:focus-within::before{transform:scaleX(1)}
+.product-grid .product-card .product-img{flex-shrink:0}
+.product-grid .product-img::after{content:"";position:absolute;inset:58% 0 0;background:linear-gradient(transparent,rgba(25,55,40,.19));pointer-events:none}
+.product-grid .product-img .image-tag{z-index:1;box-shadow:0 3px 12px rgba(18,48,32,.08);letter-spacing:.13em}
+.product-grid .product-card .product-body{display:flex;flex-direction:column;flex:1}
+.product-grid .product-card .product-body p{flex:1;min-height:0;margin-bottom:17px}
+.product-grid .product-card .chips{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 23px}
+.product-grid .product-card .chips span{display:inline-flex;align-items:center;gap:7px;background:#eff3ed;border:1px solid #e0e7dd;color:#46624b;font-size:10px;line-height:1.4;padding:7px 9px;font-weight:700}
+.product-grid .product-card .chips span::before{content:"";display:inline-block;flex:none;width:13px;height:13px;background-position:center;background-size:contain;background-repeat:no-repeat}
+.product-grid .product-card .chips .chip-wood::before{background-image:url("images/icon-leaf.svg")}
+.product-grid .product-card .chips .chip-heat::before{background-image:url("images/icon-flame.svg")}
+.product-grid .product-card .text-link{align-self:flex-start;margin-top:auto;gap:14px}
+.product-grid .product-card .text-link span{display:inline-block;transition:transform .2s ease}
+.product-grid .product-card .text-link:hover span{transform:translate(3px,-3px)}
+@media(max-width:760px){
+ .hero-copy::before{left:-120px;top:5px;width:280px;height:280px}
+ .hero-visual::before{inset:11px}
+ .light-section::before{width:215px;height:215px;right:-104px;top:-70px}
+ .light-section::after,.section-story::after{width:135px;height:180px;opacity:.08}
+ .steps-section::after{width:235px;height:235px;right:-115px;bottom:-100px}
+ .product-grid .product-card .chips{margin-bottom:22px}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero-visual .hero-photo,.product-grid .product-card::before,.product-grid .product-card .text-link span{transition:none!important}
+ .hero-visual:hover .hero-photo{transform:none}
+}
