@@ -229,3 +229,131 @@
  .hero-visual .hero-photo,.product-grid .product-card::before,.product-grid .product-card .text-link span{transition:none!important}
  .hero-visual:hover .hero-photo{transform:none}
 }
+
+
+/* 2026 demo extension: warm editorial benefit panel, wood guide, polished footer */
+.product-section-tail{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-top:30px;padding:19px 0;border-top:1px solid #d7dfd5}
+.product-section-tail>span{font-size:10px;font-weight:800;letter-spacing:.16em;color:#9e725a}
+.product-section-tail>a{font-size:12px;font-weight:800;color:var(--ink2);border-bottom:1px solid #b5c6b8;padding-bottom:5px}
+.product-section-tail>a:hover{color:var(--orange)}
+.why-section{position:relative;isolation:isolate;overflow:hidden;min-height:540px;background:#264232;color:#fff}
+.why-background,.why-background::after{position:absolute;inset:0}
+.why-background img{width:100%;height:100%;object-fit:cover;object-position:center 44%;filter:saturate(.82)}
+.why-background::after{content:"";background:linear-gradient(90deg,rgba(22,45,32,.46),rgba(22,45,32,.08) 48%,rgba(13,32,21,.62))}
+.why-layout{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,790px) minmax(210px,1fr);gap:38px;align-items:end;padding:78px 0 85px}
+.why-panel{background:#faf8f3;color:var(--ink);padding:38px 43px 44px;box-shadow:0 18px 55px #12281835;border-top:4px solid #be7d5b}
+.why-panel-kicker{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.why-panel-kicker .eyebrow{margin-bottom:14px}
+.why-counter{font-size:10px;font-weight:800;letter-spacing:.12em;color:#a98a7e}
+.why-panel h2{font-size:clamp(29px,3vw,46px);margin-bottom:14px}
+.why-lead{font-size:13px;line-height:1.8;color:#6c796c;max-width:620px;margin-bottom:27px}
+.why-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.why-benefit{min-width:0;border-top:1px solid #d5dcd1;padding-top:17px;display:flex;flex-direction:column;align-items:flex-start;gap:7px;transition:transform .2s ease}
+.why-benefit:hover{transform:translateY(-3px)}
+.why-icon{display:block;width:43px;height:43px;border-radius:50%;background-color:#e6ede2;background-size:21px 21px;background-position:center;background-repeat:no-repeat;margin-bottom:5px}
+.why-icon-leaf{background-image:url("images/icon-leaf.svg")}
+.why-icon-calc{background-image:url("images/icon-calc.svg")}
+.why-icon-map{background-image:url("images/icon-map.svg")}
+.why-benefit strong{font-size:13px;line-height:1.35;color:#274934}
+.why-benefit small{font-size:11px;color:#748173;line-height:1.55}
+.why-aside{padding:16px 2px 15px 10px;text-shadow:0 2px 14px #172a22c0}
+.why-aside>span{font-size:10px;font-weight:800;letter-spacing:.18em;color:#f5c19f}
+.why-aside>strong{display:block;font:700 clamp(27px,2.8vw,42px)/1.17 Manrope,sans-serif;letter-spacing:-.055em;margin:13px 0 14px}
+.why-aside p{font-size:12px;color:#f0f0e9;line-height:1.8;max-width:260px}
+.why-aside a{display:inline-flex;align-items:center;gap:16px;font-size:12px;font-weight:800;color:white;border-bottom:1px solid #efbf9f;padding-bottom:9px;margin-top:16px}
+.why-aside a:hover{color:#ffd4b7}
+.wood-guide-section{background:#f7f7f0;scroll-margin-top:105px}
+.wood-guide-layout{display:grid;grid-template-columns:minmax(0,.98fr) minmax(0,1.02fr);gap:46px;align-items:start}
+.wood-guide-accordion{border-top:1px solid #cbd4c8}
+.wood-guide-item{border-bottom:1px solid #cbd4c8}
+.wood-guide-item summary{display:flex;align-items:center;gap:17px;cursor:pointer;list-style:none;padding:22px 12px 22px 0;color:#244a32;font-size:23px;font-family:Manrope,sans-serif;font-weight:700;letter-spacing:-.045em}
+.wood-guide-item summary::-webkit-details-marker{display:none}
+.guide-step{display:inline-flex;flex:none;align-items:center;justify-content:center;background:#e7ede3;width:43px;height:43px;border-radius:50%;font:800 11px "DM Sans",sans-serif;letter-spacing:.06em;color:#b17050}
+.guide-plus{display:inline-flex;flex:none;align-items:center;justify-content:center;width:28px;height:28px;margin-left:auto;color:#b67451;font:400 29px/1 "DM Sans",sans-serif}
+.guide-plus::before{content:"+"}
+.wood-guide-item[open] .guide-plus::before{content:"−"}
+.wood-guide-item[open] summary{color:#ba744e}
+.guide-answer{padding:0 42px 22px 60px}
+.guide-answer p{font-size:13px;line-height:1.85;color:#657665}
+.guide-answer .text-link{font-size:11px}
+.guide-mobile-photo{display:none}
+.guide-disclaimer{font-size:11px;line-height:1.8;color:#8c948a;margin:23px 0 0}
+.wood-guide-visual{position:relative;margin:0;min-width:0}
+.wood-guide-photo-wrap{position:relative;height:415px;background:#dae0d3;overflow:hidden;box-shadow:0 18px 35px #223c2517}
+.wood-guide-photo-wrap img{height:100%;width:100%;object-fit:cover}
+.wood-guide-photo-wrap::after{content:"";position:absolute;inset:60% 0 0;background:linear-gradient(transparent,#152b1b80);pointer-events:none}
+.wood-guide-photo-badge{position:absolute;z-index:1;bottom:22px;left:22px;padding:10px 16px;background:#fdfbf3;color:#264932;font-size:10px;font-weight:800;letter-spacing:.15em}
+.wood-guide-visual figcaption{font-size:11px;color:#7c887d;line-height:1.6;padding-top:12px}
+.site-footer{position:relative;isolation:isolate;background:#122d20;overflow:hidden}
+.site-footer::before{content:"";position:absolute;z-index:0;width:470px;height:470px;right:-145px;bottom:-130px;background:url("images/wood-rings.svg") center/contain no-repeat;filter:brightness(0) invert(1);opacity:.07;pointer-events:none}
+.site-footer>.container{position:relative;z-index:1}
+.footer-intro{display:flex;align-items:center;gap:15px;border-bottom:1px solid #496052;padding-bottom:21px;margin-bottom:43px;color:#e1b092}
+.footer-intro-symbol{font-size:22px}
+.footer-intro>span:nth-child(2){display:flex;align-items:center;gap:13px;font-size:10px;font-weight:800;letter-spacing:.16em}
+.footer-intro i{display:block;width:26px;height:1px;background:#a5b3a3}
+.footer-intro>a{margin-left:auto;color:#fff;font-size:11px;font-weight:800;white-space:nowrap}
+.footer-intro>a span{margin-left:8px}
+.footer-intro>a:hover{color:#eab794}
+.footer-grid.footer-grid-modern{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.75fr) minmax(0,1.05fr) minmax(0,1.1fr);gap:clamp(18px,3.5vw,50px);padding-bottom:35px}
+.footer-grid-modern>div{min-width:0}
+.footer-grid-modern h3{display:block;font-size:12px;letter-spacing:.025em;color:#f5f4ed;margin-bottom:22px}
+.footer-grid-modern h3::after{content:"";display:block;width:30px;height:2px;background:#b88465;margin-top:12px}
+.footer-grid-modern .footer-brand{font-size:clamp(22px,2vw,29px);margin-bottom:16px}
+.footer-about p{max-width:270px;margin:0 0 21px}
+.footer-brand-note{font-size:10px;letter-spacing:.14em;font-weight:700;color:#c68d6b}
+.footer-grid-modern .footer-links>a{line-height:2.6}
+.footer-grid-modern .footer-links>a:hover,.footer-map-link:hover{color:#f5b995}
+.hours-list{padding:0;margin:0;display:flex;flex-direction:column;gap:7px}
+.hours-list>div{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid rgba(187,208,190,.14);font-size:11px}
+.hours-list dt{color:#cbd7cc}
+.hours-list dd{font-weight:800;color:#f0e9dc;margin:0;white-space:nowrap;font-variant-numeric:tabular-nums}
+.footer-demo-flag{font-size:9px;vertical-align:middle;color:#e0b18c;letter-spacing:.1em;margin-left:6px}
+.footer-grid-modern .footer-hours-note{font-size:10px;line-height:1.6;margin:16px 0 0;color:#b7c4b6}
+.footer-delivery-mark{display:flex;align-items:center;gap:12px;border:1px solid #516b56;padding:12px 13px;margin:0 0 14px;background:#22433152}
+.footer-delivery-icon{flex:none;width:38px;height:30px;background:url("images/icon-delivery.svg") center/contain no-repeat;filter:brightness(0) invert(1);opacity:.9}
+.footer-delivery-mark>span:last-child{font-size:12px;font-weight:800;line-height:1.25;color:#f1e9dc;letter-spacing:.065em}
+.footer-delivery-mark small{display:block;font-size:8px;letter-spacing:.12em;color:#dfab87;margin-top:4px}
+.footer-service p{font-size:11px;line-height:1.8;margin-bottom:12px}
+.footer-grid-modern a.footer-map-link{display:inline-flex;color:#e7b293;font-size:11px;line-height:1.6;font-weight:800;border-bottom:1px solid #9d7459;padding-bottom:7px}
+.footer-map-link span{padding-left:9px}
+.footer-disclaimer{border-top:1px solid #395746;border-bottom:1px solid #395746;padding:14px 0;font-size:9px;font-weight:700;line-height:1.8;letter-spacing:.095em;color:#aabbaa}
+.site-footer .footer-bottom{border-top:0;padding-top:23px}
+.site-footer .footer-bottom a:hover{color:#e2aa83}
+@media(max-width:1120px){
+ .why-layout{grid-template-columns:minmax(0,1.5fr) minmax(190px,.65fr);gap:20px}
+ .why-panel{padding:31px}
+ .why-benefits{gap:12px}
+ .footer-grid.footer-grid-modern{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+}
+@media(max-width:760px){
+ .why-layout{grid-template-columns:1fr;align-items:start;padding:45px 0;gap:25px}
+ .why-panel{padding:28px 24px 30px}
+ .why-panel h2{font-size:35px}
+ .why-benefits{gap:13px}
+ .why-aside{padding:12px 4px 2px}
+ .why-aside>strong{font-size:32px}
+ .why-aside p{max-width:480px}
+ .wood-guide-layout{grid-template-columns:1fr;gap:20px}
+ .wood-guide-visual{display:none}
+ .wood-guide-item summary{font-size:21px;padding:19px 0}
+ .guide-answer{padding:0 5px 22px 12px}
+ .guide-mobile-photo{display:block;width:100%;height:220px;object-fit:cover;margin-top:20px}
+ .footer-intro{gap:10px;flex-wrap:wrap;margin-bottom:34px}
+ .footer-intro>a{width:100%;margin-left:0}
+ .footer-grid.footer-grid-modern{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 20px}
+ .footer-about,.footer-service{grid-column:1/-1}
+ .footer-service{max-width:400px}
+ .footer-disclaimer{font-size:8px}
+}
+@media(max-width:420px){
+ .why-benefits{grid-template-columns:1fr;gap:8px}
+ .why-benefit{display:grid;grid-template-columns:44px 1fr;column-gap:13px;align-items:center;gap:3px}
+ .why-benefit .why-icon{grid-row:span 2;margin:0}
+ .why-benefit strong{grid-column:2}
+ .why-benefit small{grid-column:2}
+ .footer-grid.footer-grid-modern{gap:25px 14px}
+ .footer-grid-modern .footer-brand{font-size:25px}
+ .wood-guide-item summary{font-size:19px}
+ .wood-guide-photo-badge{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.why-benefit{transition:none!important}}
