@@ -357,3 +357,43 @@
  .wood-guide-photo-badge{font-size:9px}
 }
 @media(prefers-reduced-motion:reduce){.why-benefit{transition:none!important}}
+
+
+/* Header readability and linked delivery card — Oct 2026 */
+.nav-wrap{min-height:96px;gap:19px}
+.brand{gap:14px}
+.brand-mark{font-size:26px;padding:11px 17px 12px 12px}
+.brand-star{font-size:12px;top:-12px}
+.brand-name{font-size:19px}
+.brand-name small{font-size:8.5px;letter-spacing:.15em;margin-top:7px}
+.nav{gap:20px}
+.nav a{font-size:14px}
+.header-cta{font-size:12.5px;padding:14px 16px}
+.footer-delivery-mark{color:inherit;cursor:pointer;transition:background .2s ease,border-color .2s ease,transform .2s ease}
+.footer-delivery-mark::after{content:"↗";margin-left:auto;font-size:19px;line-height:1;color:#e4b08a;transition:transform .2s ease}
+.footer-delivery-mark:hover,.footer-delivery-mark:focus-visible{background:#2e5640;border-color:#d09a70;transform:translateY(-2px)}
+.footer-delivery-mark:hover::after,.footer-delivery-mark:focus-visible::after{transform:translate(2px,-2px)}
+.footer-delivery-mark:focus-visible{outline:2px solid #f1bd96;outline-offset:4px}
+@media(max-width:1080px){
+ .nav-wrap{gap:15px}
+ .nav{gap:13px}
+ .nav a{font-size:12.5px}
+ .brand-name{font-size:18px}
+}
+@media(max-width:760px){
+ .nav-wrap{min-height:79px;gap:12px}
+ .brand{gap:11px}
+ .brand-mark{font-size:22px;padding:9px 14px 10px 10px}
+ .brand-star{font-size:10px;top:-10px}
+ .brand-name{font-size:17px}
+ .brand-name small{font-size:7.5px;margin-top:6px}
+ .nav a{font-size:16px}
+}
+@media(max-width:420px){
+ .brand-name{font-size:16px}
+ .brand-name small{font-size:7px}
+ .brand-mark{font-size:21px}
+}
+@media(prefers-reduced-motion:reduce){
+ .footer-delivery-mark,.footer-delivery-mark::after{transition:none!important}
+}
